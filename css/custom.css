@@ -1,0 +1,282 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Universal Styles */
+.bold-text {
+    font-weight: 700;
+}
+
+/* Icons */
+.bi-circle-fill {
+    color: #B88E33;
+    font-size: .8rem;
+}
+
+/* Header Styles */
+.logo-text {
+    font-style: italic;
+    font-size: 10pt;
+    color: #CBCED1;
+    display: inline;
+    vertical-align: bottom;
+    line-height: 0.8;
+    padding-right: 5px;
+}
+.secondary-header-text {
+    font-style: italic;
+    font-size: 12pt;
+    color: #707070;
+}
+
+.top-bar {
+    min-height: 90px;
+    background-color: #121212;
+}
+.bottom-bar {
+    min-height: 28px;
+    background-color: white;
+    padding: .2rem;
+}
+.circle-container {
+    border-bottom: 1px solid #707070;
+    height: 2.5rem;
+}
+
+/* Jumbotron Styles */
+.circle {
+    background: #0074E0;
+    /* width: 82px;
+    height: 82px;
+    border-radius: 50%; */
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+}
+.circle div {
+    position: relative;
+    font-weight: 700;
+    font-size: 3rem;
+    left: 0px;
+    top: 5px;
+    width: 82px;
+    height: 82px;
+    color: #FFF;
+    text-align: center;
+}
+/* Connected Box Styles */
+.connected-box {
+    list-style: none;
+    margin-top: -100px;
+    padding: 1rem 0 1rem;
+    position: relative;
+}
+
+    .connected-box:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 1px;
+        left: 50%;
+        margin-top: 90px;
+        margin-bottom: 80px;
+        border: 2px dotted #B88E33;
+    }
+
+    .connected-box > li {
+        position: relative;
+    }
+
+        .connected-box > li:before,
+        .connected-box > li:after {
+            content: " ";
+            display: table;
+        }
+
+        .connected-box > li:after {
+            clear: both;
+        }
+
+        .connected-box > li:before,
+        .connected-box > li:after {
+            content: " ";
+            display: table;
+        }
+
+        .connected-box > li:after {
+            clear: both;
+        }
+
+        .connected-box > li > .connected-box-panel {
+            width: 48%;
+            float: left;
+            right: 5%;
+            padding: 20px;
+            position: relative;
+            background-color: #F7F7F8;
+        }
+        .connected-box > li > .connected-box-panel:before {
+            content: "";
+            width: 12%;
+            height: 2px;
+            border-bottom: 2px dotted #B88E33;
+            margin: auto 0;
+            position: absolute;
+            top: 53%;
+            right: -80px;   
+        }
+        .connected-box > li.connected-box-inverted > .connected-box-panel:before {
+            content: "";
+            width: 10%;
+            height: 2px;
+            border-bottom: 2px dotted #B88E33;
+            margin: auto 0;
+            position: absolute;
+            top: 12px;
+            right: 0;
+            left: -76px;
+            bottom: 0;
+        }
+        
+        .connected-box > li > .connected-box-badge {
+            position: absolute;
+            top: 47%;
+            left: 44%;
+            z-index: 100;
+        }
+        .connected-box > li.connected-box-inverted > .connected-box-badge {
+            position: absolute;
+            top: 47%;
+            left: 55%;
+            /* width: 50px; */
+            z-index: 100;
+        }
+
+        .connected-box > li.connected-box-inverted > .connected-box-panel {
+            float: right;
+            left: 5%;
+        }
+
+.connected-box-title {
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: inherit;
+}
+
+.connected-box-body > p,
+.connected-box-body > ul {
+    margin-bottom: 0;
+}
+
+    .connected-box-body > p + p {
+        margin-top: 5px;
+    }
+
+@media (max-width: 767px) {
+    
+    ul.connected-box {
+        margin-top: -75px;
+        font-size: .8rem;
+    }
+    
+    ul.connected-box:before {
+        left: 10px;
+        margin-top: 95px;
+        margin-bottom: 120px;
+    }
+    .connected-box > li.connected-box-inverted > .connected-box-panel:before {
+        content: "";
+        width: 12%;
+        height: 2px;
+        border-bottom: 2px dotted #B88E33;
+        margin: 0;
+        margin-top: 68px;
+        margin-left: 15px;
+        position: absolute;
+        /* top: 12px;
+        right: 0;
+        left: -65px;
+        bottom: 0; */
+    }
+    ul.connected-box > li > .connected-box-panel {
+        /* width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px); */
+        width: 80%;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .connected-box > li.connected-box-inverted > .connected-box-panel {
+        float: right;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .connected-box > li.connected-box-inverted > .connected-box-badge {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        z-index: 100;
+    }
+    ul.connected-box > li > .connected-box-badge {
+        left: 35px;
+        margin-left: 0;
+        top: 45%;
+    }
+
+    ul.connected-box > li > .connected-box-panel {
+        float: right;
+    }
+
+        ul.connected-box > li > .connected-box-panel:before {
+            left: -55px;
+            right: auto;
+            top: 55%;
+        }
+
+        ul.connected-box > li > .connected-box-panel:after {
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -14px;
+            right: auto;
+        }
+}
+/* Overrides */
+.jumbotron {
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    min-height: 550px;
+    background-color: #121212;
+}
+
+@media (max-width: 576px){
+    header {
+        display: none;
+    }
+    .circle-container {
+        height: 1.5rem;
+    }
+    .circle {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .circle div {
+        position: relative;
+        font-weight: 500;
+        font-size: 1.5rem;
+        left: -22px;
+        top: 3px;
+        width: 82px;
+        height: 82px;
+        color: #FFF;
+        text-align: center; 
+    }
+    .jumbotron {
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+        min-height: 189px;
+        background-color: #121212;
+    }
+}
